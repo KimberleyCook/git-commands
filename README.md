@@ -60,9 +60,8 @@ $ git branch -d [branch-name]
 ```
 $ git checkout -b [branch-name] origin/[branch-name]
 ```
-#### Safely merging a branche
+#### Safely merging a branch
 Go onto the branch you want merge into, for example 'develop' then merge in your choosen branch for example 'kim-footer-amend' 
-
 ```
 $ git merge [branch-name] --no-commit --no-ff
 ```
