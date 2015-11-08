@@ -2,9 +2,12 @@
 A list of the most commonly used git commands
 
 #### Cloning
+Navigate into the folder you want to clone your project into
+
 ```
 $ cd /chosen-path/
 ```
+Then clone it
 
 ```
 $ git clone [project URL]
@@ -57,28 +60,27 @@ $ git branch -d [branch-name]
 ```
 $ git checkout -b [branch-name] origin/[branch-name]
 ```
-#### Safely merging two branches
+#### Safely merging a branche
+Go onto the branch you want merge into, for example 'develop' then merge in your choosen branch for example 'kim-footer-amend' 
+
 ```
 $ git merge [branch-name] --no-commit --no-ff
 ```
 (the --no-commit does not automatically commit the branch after merging and --no-ff does not fast forward the branch you're merging into)
 
 #### Solving conflicts
+This will check out their file if you know yours is incorrect
 ```
 $ git checkout --theirs /path-to/conflict-file 
 ````
-(this will check out their file if you know your local one is outdated)
-
+This will check out your file if you know the one in the repo is outdated
 ```
 $ git checkout --ours /path-to/conflict-file
 ```
-(this will check out your file if you know the one in the repository is outdated)
-
 Otherwise, you'll have to manually sort through them in the conflicted file. Make sure you have no <<< or >>> in your file as your conflicts live in these.
 
 #### Reverting
-
-If you want to delete your current changes and revert back to the previous commmit 
+If you want to delete your current changes and revert back to the previous commmit (this will lose any amends you have uncommited so only do this if you're sure)
 ```
 $ git reset --hard
 ```
