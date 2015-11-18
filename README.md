@@ -50,8 +50,14 @@ $ git checkout [branch-name]
 $ git branch
 ```
 
-#### To delete a branch
+#### Deleting a branch
 Make sure you're not on the branch you want to delete otherwise it will not work
+
+Delete a remote branch
+```
+$ git push origin --delete [branch-name]
+```
+Delete a local branch
 ```
 $ git branch -d [branch-name]
 ```
