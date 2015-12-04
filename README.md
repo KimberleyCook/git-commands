@@ -85,7 +85,7 @@ $ git checkout --ours /path-to/conflict-file
 Otherwise, you'll have to manually sort through them in the conflicted file. Make sure you have no <<< or >>> in your file as your conflicts live in these.
 
 #### Reverting
-If you want to delete your current changes and revert back to the previous commmit (this will lose any amends you have uncommited so only do this if you're sure)
+If you want to delete your current changes and revert back to the previous commmit (this will lose any amends you haven’t commited so only do this if you're sure)
 ```
 $ git reset --hard
 ```
