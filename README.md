@@ -19,10 +19,20 @@ $ git clone [project URL]
 $ git clone [project URL] --depth=1
 ```
 
+
+#### Checking git's status
+
+Which files have changed, which branch is git using, etc
+
+```
+$ git status
+```
+
+
 #### Adding/committing and pushing
 
 ```
-$ git add [directory]
+$ git add [file or directory]
 
 $ git commit -m 'your commit message'
 
@@ -82,7 +92,7 @@ This will check out your file if you know the one in the repo is outdated
 ```
 $ git checkout --ours /path-to/conflict-file
 ```
-Otherwise, you'll have to manually sort through them in the conflicted file. Make sure you have no <<< or >>> in your file as your conflicts live in these.
+Otherwise, you'll have to manually sort through them in the conflicted file. Make sure you have no `<<<` or `>>>` in your file as your conflicts live in these.
 
 #### Reverting
 If you want to delete your current changes and revert back to the previous commmit (this will lose any amends you haven’t commited so only do this if you're sure)
