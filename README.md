@@ -13,14 +13,14 @@ Then clone it
 $ git clone [project URL]
 ```
 
-##### If you want to do a shallow clone which would only get the recent commit and ignore all of it's history you can do
+##### If you want to do a shallow clone which would only get the recent commit and ignore all of the repos history you can do
 
 ```
 $ git clone [project URL] --depth=1
 ```
 
 
-#### Checking git's status
+#### Checking git status
 
 Which files have changed, which branch is git using, etc
 
@@ -45,7 +45,7 @@ $ git push
 $ git checkout -b [branch-name]
 ```
 
-#### Pushing your branch to repo for the first time
+#### Pushing your branch to the repo for the first time
 ```
 $ git push -u origin [branch-name]
 ```
